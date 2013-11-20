@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1">
+		<title>Project Zomboid Checklist</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<h1>Project Zomboid Checklist</h1>
+		<div class="pz-checklist" data-bind="css: { loaded: loaded }">
+			<div class="checklists js-masonry" data-masonry-options='{ "columnWidth": 0, "itemSelector": ".checklist", "transitionDuration": 0 }'>
+				<!-- ko foreach: checklists -->
+				<div class="checklist" data-bind="template: {name: templateType, data: $data}"></div>
+				<!-- /ko -->
+				<div class="notes checklist">
+					<h2>Notes:</h2>
+					<textarea cols="30" rows="10" data-bind="value: notes, valueUpdate: 'afterkeydown'"></textarea>
+				</div>
+			</div>
+			<button class="resetBt" data-bind="click: clear">Reset all</button>
+		</div>
+
+		<script type="text/html" id="table-checklist">
+			<h2 data-bind="text: label"></h2>
+			<table class="checklist-items">
+				<thead>
+					<tr>
+						<th></th>
+						<!-- ko foreach: headers -->
+						<th class="checklist-item-header" data-bind="text: $data"></th>
+						<!-- /ko -->
+					</tr>
+				</thead>
+				<tbody>
+					<!-- ko foreach: checklistItems -->
+					<tr class="checklist-item">
+						<td class="checklist-item-label" data-bind="text: label"></td>
+						<!-- ko foreach: checkableItems -->
+						<td class="checkable-item">
+							<input type="checkbox" data-bind="value: $data, checked: $parent.checkedItems, attr: { id: $parent.id + '_chk_' + $index() }">
+							<label data-bind="attr: { for: $parent.id + '_chk_' + $index() }"></label>
+						</td>
+						<!-- /ko -->
+					</tr>
+					<!-- /ko --></tbody>
+			</table>
+		</script>
+
+		<script src="js/vendor/masonry.js"></script>
+		<script src="js/vendor/knockout-3.0.0.js"></script>
+		<script src="js/utils/amd.js"></script>
+		<script src="js/utils/amd_shims.js"></script>
+		<script src="js/app/main.js"></script>
+		<script src="js/app/data.js"></script>
+		<script src="js/app/checklist_viewmodel.js"></script>
+		<script src="js/app/checklist_item_viewmodel.js"></script>
+		<script>require('main');</script>
+	</body>
+</html>
