@@ -2,6 +2,26 @@
 @checkboxHeight: 20px;
 @checkboxBorderWidth: 2px;
 
+.columns(@colwidth: 550px, @colcount: 0, @colgap: 30px, @columnRuleColor: #EEE, @columnRuleStyle: none, @columnRuleWidth: 1px) {
+  -moz-column-width: @colwidth;
+  -moz-column-count: @colcount;
+  -moz-column-gap: @colgap;
+  -moz-column-rule-color: @columnRuleColor;
+  -moz-column-rule-style: @columnRuleStyle;
+  -moz-column-rule-width: @columnRuleWidth;
+  -webkit-column-width: @colwidth;
+  -webkit-column-count: @colcount;
+  -webkit-column-gap: @colgap;
+  -webkit-column-rule-color: @columnRuleColor;
+  -webkit-column-rule-style: @columnRuleStyle;
+  -webkit-column-rule-width: @columnRuleWidth;
+  column-width: @colwidth;
+  column-count: @colcount;
+  column-gap: @colgap;
+  column-rule-color: @columnRuleColor;
+  column-rule-style: @columnRuleStyle;
+  column-rule-width: @columnRuleWidth;
+}
 
 *, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
@@ -20,11 +40,15 @@ h2 {
 	text-transform: capitalize;
 }
 
+table { width: 100%; }
+
 th, td {
 	padding: 6px;
 	text-align: center;
 	vertical-align: middle;
 }
+
+th { padding: 6px 8px; }
 
 tr {
 	transition: .3s all;
@@ -82,10 +106,15 @@ input[type=checkbox] {
 	margin: 10px;
 }
 
+.checklists {
+	.columns();
+}
+
 .checklist {
-	width: 575px;
+	display: inline-block;
+	width: 100%;
 	padding: 16px;
-	margin: 10px;
+	margin: 10px 0;
 	background-color: #fafafa;
 	box-shadow: 0 4px 8px rgba(128, 128, 128, 1);
 	border: 1px solid #666;
