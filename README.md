@@ -3,6 +3,8 @@ ZomboidChecklist
 
 Browser-based survival checklist for the game Project Zomboid.
 
+This is based on a printable checklist posted by Qloos on the Steam Forums.  The original forum thread is here: http://steamcommunity.com/app/108600/discussions/0/648811852429348177
+
 How to Use the Checklist
 ------------------------
 
