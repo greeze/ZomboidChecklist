@@ -51,7 +51,6 @@ th, td {
 th { padding: 6px 8px; }
 
 tr {
-	transition: .3s all;
 	&:hover {
 		background-color: #f2f2ff;
 	}
@@ -68,7 +67,6 @@ input[type=checkbox] {
 		height: @checkboxHeight;
 		border: @checkboxBorderWidth solid #666;
 		border-radius: 4px;
-		transition: .3s all;
 		&:after {
 			position: relative;
 			left: -@checkboxBorderWidth;
@@ -82,11 +80,10 @@ input[type=checkbox] {
 			color: #555;
 			content: '\00D7';
 			//content: '\2713';
-			transition: .3s all;
 			opacity: 0;
 		}
 		&:hover {
-			box-shadow: 0 2px 4px rgba(128, 128, 128, 1) inset;
+			box-shadow: 0 2px 3px rgba(128, 128, 128, .5) inset;
 		}
 	}
 	&:checked + label:after {
@@ -95,7 +92,7 @@ input[type=checkbox] {
 }
 
 .pz-checklist {
-	transition: 1s all;
+	transition: 1s opacity;
 	opacity: 0;
 	&.loaded { opacity: 1; }
 }
@@ -137,7 +134,6 @@ input[type=checkbox] {
 	border: 1px solid #ccc;
 	outline: none;
 	box-shadow: 0 0 0 rgba(0, 0, 128, 0);
-	transition: 1s all;
 	&:focus {
 		box-shadow: 0 0 8px rgba(0, 0, 128, .5);
 	}
