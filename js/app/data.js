@@ -12,7 +12,9 @@ define('Data', function() {
 			{label: 'skillbooks', templateType: tableTemplate, headers: levels, checklistItems: [
 				{label: 'carpentry', checkableItems: levels, checkedItems: []},
 				{label: 'cooking', checkableItems: levels, checkedItems: []},
-				{label: 'farming', checkableItems: levels, checkedItems: []}
+				{label: 'farming', checkableItems: levels, checkedItems: []},
+				{label: 'fishing', checkableItems: levels, checkedItems: []},
+				{label: 'trapping', checkableItems: levels, checkedItems: []}
 			]},
 			{label: 'safehouses', templateType: tableTemplate, headers: houses, checklistItems: [
 				{label: 'house perimeter cleared', checkableItems: houses, checkedItems: []},
@@ -32,41 +34,10 @@ define('Data', function() {
 				{label: 'seeds sown', checkableItems: houses, checkedItems: []},
 				{label: 'outdoor firepit made', checkableItems: houses, checkedItems: []}
 			]},
-			{label: 'tool box checklist', templateType: tableTemplate, headers: houses, checklistItems: [
-				{label: 'hammer', checkableItems: houses, checkedItems: []},
-				{label: 'saw', checkableItems: houses, checkedItems: []},
-				{label: 'axe', checkableItems: houses, checkedItems: []},
-				{label: 'screwdriver', checkableItems: houses, checkedItems: []},
-				{label: 'sledgehammer', checkableItems: houses, checkedItems: []},
-				{label: 'flashlight', checkableItems: houses, checkedItems: []}
+            {label: 'Medical items', templateType: tableTemplate, headers: houses, checklistItems: [
+				{label: 'adhesive bandages', checkableItems: houses, checkedItems: []},
+					{label: 'alcohol cotton balls', checkableItems: houses, checkedItems: []}
 			]},
-			{label: 'cooking utensil checklist', templateType: tableTemplate, headers: houses, checklistItems: [
-				{label: 'bowls', checkableItems: houses, checkedItems: []},
-				{label: 'kettle', checkableItems: houses, checkedItems: []},
-				{label: 'pot', checkableItems: houses, checkedItems: []},
-				{label: 'frying pan', checkableItems: houses, checkedItems: []},
-				{label: 'roasting pan', checkableItems: houses, checkedItems: []},
-				{label: 'can opener', checkableItems: houses, checkedItems: []},
-				{label: 'dish towels', checkableItems: houses, checkedItems: []},
-				{label: 'kitchen knife', checkableItems: houses, checkedItems: []}
-			]},
-			{label: 'first aid kit checklist', templateType: tableTemplate, headers: houses, checklistItems: [
-				{label: 'bandages', checkableItems: houses, checkedItems: []},
-				{label: 'painkillers', checkableItems: houses, checkedItems: []},
-				{label: 'beta blockers', checkableItems: houses, checkedItems: []},
-				{label: 'anti-depressants', checkableItems: houses, checkedItems: []},
-				{label: 'vitamins', checkableItems: houses, checkedItems: []},
-				{label: 'sleeping tablets', checkableItems: houses, checkedItems: []},
-				{label: 'cigarettes', checkableItems: houses, checkedItems: []},
-				{label: 'tissue', checkableItems: houses, checkedItems: []}
-			]},
-			{label: 'others', templateType: tableTemplate, headers: houses, checklistItems: [
-				{label: 'trowel', checkableItems: houses, checkedItems: []},
-				{label: 'watering can', checkableItems: houses, checkedItems: []},
-				{label: 'campfire kit', checkableItems: houses, checkedItems: []},
-				{label: 'tent kit', checkableItems: houses, checkedItems: []},
-				{label: 'sweater', checkableItems: houses, checkedItems: []}
-			]}
 		],
 		notes: ''
 	};
