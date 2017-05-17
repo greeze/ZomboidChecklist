@@ -11,6 +11,7 @@ define('Data', function() {
 		checklists: [
 			{label: 'skillbooks', templateType: tableTemplate, headers: levels, checklistItems: [
 				{label: 'carpentry', checkableItems: levels, checkedItems: []},
+				{label: 'metalworking', checkableItems: levels, checkedItems: []},
 				{label: 'cooking', checkableItems: levels, checkedItems: []},
 				{label: 'farming', checkableItems: levels, checkedItems: []},
 				{label: 'fishing', checkableItems: levels, checkedItems: []},
