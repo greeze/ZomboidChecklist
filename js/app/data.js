@@ -11,11 +11,11 @@ define('Data', function() {
 		checklists: [
 			{label: 'skillbooks', templateType: tableTemplate, headers: levels, checklistItems: [
 				{label: 'carpentry', checkableItems: levels, checkedItems: []},
-				{label: 'metalwork', checkableItems: levels, checkedItems: []},
 				{label: 'cooking', checkableItems: levels, checkedItems: []},
 				{label: 'farming', checkableItems: levels, checkedItems: []},
-				{label: 'fishing', checkableItems: levels, checkedItems: []},
 				{label: 'first aid', checkableItems: levels, checkedItems: []},
+				{label: 'fishing', checkableItems: levels, checkedItems: []},
+				{label: 'metalwork', checkableItems: levels, checkedItems: []},
 				{label: 'trapping', checkableItems: levels, checkedItems: []}
 			]},
 			{label: 'tool bag', templateType: tableTemplate, headers: houses, checklistItems: [
