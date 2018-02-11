@@ -15,7 +15,7 @@ define('Data', function() {
 				{label: 'cooking', checkableItems: levels, checkedItems: []},
 				{label: 'farming', checkableItems: levels, checkedItems: []},
 				{label: 'fishing', checkableItems: levels, checkedItems: []},
-				{label: 'first aide', checkableItems: levels, checkedItems: []},
+				{label: 'first aid', checkableItems: levels, checkedItems: []},
 				{label: 'trapping', checkableItems: levels, checkedItems: []}
 			]},
 			{label: 'tool bag', templateType: tableTemplate, headers: houses, checklistItems: [
