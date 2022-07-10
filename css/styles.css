@@ -161,3 +161,32 @@ input[type=checkbox]:checked + label:after {
     min-width: 0;
   }
 }
+
+@media screen and (prefers-color-scheme: dark) {
+    /* Overrides for when the user has requested a dark color scheme */
+    /* through an operating system or a user agent setting. */
+    body {
+      color: #d6d0c6;
+      background: #1f2020;
+    }
+    .checklist {
+      background: #2d2d2d;
+      box-shadow: 0 4px 8px #090909;
+    }
+    tr:hover {
+      background-color: #404040;
+    }
+    .notes textarea {
+        background: #5d5d5d;
+        border: 1px solid #5a5a5a;
+      }
+    .notes textarea:focus {
+      box-shadow: 0 0 8px rgba(9, 9, 9, 0.5);
+    }
+    input[type=checkbox] + label:after {
+      color: #cccccc;
+    }
+    input[type=checkbox] + label:hover {
+      box-shadow: 0 2px 3px rgba(9, 9, 9, 0.5) inset;
+    }
+  }
