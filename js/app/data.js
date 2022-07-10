@@ -4,7 +4,7 @@ define('Data', function() {
 	var Data = {};
 	var storage = localStorage || {};
 	var houses = ['house 1', 'house 2', 'house 3', 'house 4', 'house 5', 'house 6'];
-	var levels = ['beginner', 'intermediate', 'advanced', 'expert', 'master'];
+	var levels = ['Vol. 1', 'Vol. 2', 'Vol. 3', 'Vol. 4', 'Vol. 5'];
 	var tableTemplate = 'table-checklist';
 	var listTemplate = 'list-checklist';
 	var defaults = {
@@ -12,10 +12,14 @@ define('Data', function() {
 			{label: 'skillbooks', templateType: tableTemplate, headers: levels, checklistItems: [
 				{label: 'carpentry', checkableItems: levels, checkedItems: []},
 				{label: 'cooking', checkableItems: levels, checkedItems: []},
+				{label: 'electrician', checkableItems: levels, checkedItems: []},
 				{label: 'farming', checkableItems: levels, checkedItems: []},
 				{label: 'first aid', checkableItems: levels, checkedItems: []},
 				{label: 'fishing', checkableItems: levels, checkedItems: []},
+				{label: 'foraging', checkableItems: levels, checkedItems: []},
+				{label: 'mechanics', checkableItems: levels, checkedItems: []},
 				{label: 'metalwork', checkableItems: levels, checkedItems: []},
+				{label: 'tailoring', checkableItems: levels, checkedItems: []},
 				{label: 'trapping', checkableItems: levels, checkedItems: []}
 			]},
 			{label: 'tool bag', templateType: tableTemplate, headers: houses, checklistItems: [
@@ -63,7 +67,7 @@ define('Data', function() {
 				{label: 'lighters', checkableItems: houses, checkedItems: []},
 				{label: 'matches', checkableItems: houses, checkedItems: []},
 				{label: 'campfire kits', checkableItems: houses, checkedItems: []},
-				{label: 'tent kits', checkableItems: houses, checkedItems: []}						
+				{label: 'tent kits', checkableItems: houses, checkedItems: []}
 			]},
 			{label: 'Cooking Utensils', templateType: tableTemplate, headers: houses, checklistItems: [
 				{label: 'spoons', checkableItems: houses, checkedItems: []},
